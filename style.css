@@ -8,23 +8,146 @@ body {
     background-size: 110%;
     color: transparent;
 }
-.back {
-    background-color: #fff;
-    height: calc(100vh - 145px);
+
+a {
+    text-decoration: none;
+    color: #222;
 }
+
+img {
+    display: block;
+    width: 100%;
+}
+
 .waves {
     position: relative;
     width: 100%;
     height: 15vh;
-    margin-bottom: -7px; /*Fix for safari gap*/
+    margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;
 }
-.text {
-    color: #b7a0df;
-    font-size: 32px;
+
+/*-------------- Intro--------------- */
+
+.intro {
+    background-color: #fff;
+    height: calc(100vh - 131px);
 }
-/* Animation */
+
+.wrap {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.wrap .text_box {
+    width: 60%;
+}
+
+.wrap .text_box .typeText {
+    color: #b7a0df;
+    font-size: 28px;
+}
+
+.wrap .text_box .typeText::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+.wrap .intro_img {
+    width: 40%;
+}
+
+.wrap .intro_img img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.nav_bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: #222;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav_bar a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #b7a0df;
+    margin-left: 20px;
+}
+
+.nav_bar a:hover::after {
+    width: 14px;
+    height: 14px;
+    transition: all 0.3s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Snow-Animation */
+.snow {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.snow .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#snow-top-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Cloud-Animation */
 .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -52,6 +175,8 @@ body {
         transform: translate3d(85px, 0, 0);
     }
 }
+
+/* ------------------------------------------ */
 
 .hide {
     display: none;
@@ -103,14 +228,6 @@ h1 {
 .btn_nav:focus,
 .btn_nav:active {
     outline: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-a:hover {
-    text-decoration: underline;
 }
 
 /* Animation class */
@@ -198,15 +315,4 @@ a:hover {
 -----------------------------------*/
 .contact {
     background-color: #c9cdc0;
-}
-
-.blink {
-    animation: blink 0.5s infinite;
-    font-size: 2.5rem;
-}
-
-@keyframes blink {
-    to {
-        opacity: 0;
-    }
 }

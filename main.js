@@ -46,18 +46,40 @@ $(function () {
     });
 });
 
-let content = '안녕하세요. \n 프론트엔드 개발자를 꿈꾸는 \n 최연정 입니다.';
-let typing = document.querySelector('.w3-text-light-grey');
-let i = 0;
+let typeText = document.querySelector('.typeText');
+let textToBeTyped = '';
+let textToBeTypedArr = ['안녕하세요.', '배우는 것을 즐기고 끝없이 성장하는 \n 프론트엔드 개발자가 목표인 최연정입니다.', ' 初めまして。\n 開発者を目じゃしているチェ・ヨンジョンです。'];
+let index = 0,
+    isAdding = true,
+    textToBeTypedIndex = 0;
 
-const text = document.querySelector('.text');
-
-function typingTxt() {
-    let txt = content[i++];
-    text.innerHTML += txt === '\n' ? '<br/>' : txt;
-    if (i > content.length) {
-        text.textContent = '';
-        i = 0;
-    }
+function typing() {
+    setTimeout(
+        function () {
+            typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index);
+            if (isAdding) {
+                if (index > textToBeTypedArr[textToBeTypedIndex].length) {
+                    isAdding = false;
+                    setTimeout(function () {
+                        typing();
+                    }, 1000);
+                    return;
+                } else {
+                    index++;
+                }
+            } else {
+                if (index === 0) {
+                    isAdding = true;
+                    textToBeTypedIndex = (textToBeTypedIndex + 1) % textToBeTypedArr.length;
+                } else {
+                    index--;
+                }
+            }
+            // call itself
+            typing();
+        },
+        isAdding ? 120 : 60
+    );
 }
-setInterval(typingTxt, 200);
+// start animation
+typing();
