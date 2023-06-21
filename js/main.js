@@ -1,48 +1,40 @@
-$(function () {
-    $('.btn_nav').click(function () {
-        // animate content
-        $('.page__style').addClass('animate_content');
-        $('.page__description').fadeOut(100).delay(2800).fadeIn();
+const btn = $('.nav_bar a');
+const homeBtn = $('.home_btn a');
+const menuBtn = $('.menu_btn a');
+const btnSpan = $('.nav_bar ul li a span');
+const page = $('.contents section');
 
-        setTimeout(function () {
-            $('.page__style').removeClass('animate_content');
-        }, 3200);
+// hash이용한 스크롤 페이지
+btn.click(function () {
+    $(window).scrollTo(this.hash || 0, 500);
+});
+homeBtn.click(function () {
+    $(window).scrollTo(this.hash || 0, 500);
+});
+menuBtn.click(function () {
+    $(window).scrollTo(this.hash || 0, 500);
+});
 
-        //remove fadeIn class after 1500ms
-        setTimeout(function () {
-            $('.page__style').removeClass('fadeIn');
-        }, 1500);
+$(window).scroll(function () {
+    page.each(function () {
+        let point = $(window).scrollTop();
+        let index = $(this).index();
+
+        if (point >= $(this).offset().top) {
+            btnSpan.removeClass('active');
+            btnSpan.eq(index).addClass('active');
+        }
     });
+}); //window_scroll
 
-    // on click show page after 1500ms
-    $('.home_link').click(function () {
-        setTimeout(function () {
-            $('.home').addClass('fadeIn');
-        }, 1500);
-    });
+// menu_btn
+const listMenu = $('.fullpage_menu');
 
-    $('.projects_link').click(function () {
-        setTimeout(function () {
-            $('.projects').addClass('fadeIn');
-        }, 1500);
-    });
+$(document).ready(function () {
+    $('.hamburger').click(function () {
+        $(this).toggleClass('menu_btn');
 
-    $('.skills_link').click(function () {
-        setTimeout(function () {
-            $('.skills').addClass('fadeIn');
-        }, 1500);
-    });
-
-    $('.about_link').click(function () {
-        setTimeout(function () {
-            $('.about').addClass('fadeIn');
-        }, 1500);
-    });
-
-    $('.contact_link').click(function () {
-        setTimeout(function () {
-            $('.contact').addClass('fadeIn');
-        }, 1500);
+        listMenu.stop().slideToggle(300);
     });
 });
 
