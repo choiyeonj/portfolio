@@ -10,19 +10,11 @@
 body {
     background-image: radial-gradient(34.73% 114.69% at 49.95% 16.67%, #c0e3fb 9.09%, #efd1e8 50.52%, #b7a0df 93.23%);
     background-size: 110%;
-    color: transparent;
     font-family: 'Noto Sans KR', sans-serif;
     overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-    width: 7px;
-}
-body::-webkit-scrollbar-thumb {
-    background: #c0e3fb; /* 스크롤바 색상 */
-}
-
-body::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1); /*스크롤바 뒷 배경 색상*/
+    display: none;
 }
 
 a {
@@ -152,7 +144,7 @@ section {
     height: calc(100vh - 131px);
 }
 
-.wrap {
+.intro_wrap {
     width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -161,25 +153,26 @@ section {
     padding-top: 200px;
 }
 
-.wrap .text_box {
+.intro_wrap .text_box {
     width: 60%;
 }
 
-.wrap .text_box .typeText {
+.intro_wrap .text_box .typeText {
     color: #b7a0df;
     font-size: 28px;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */
 }
 
-.wrap .text_box .typeText::after {
+.intro_wrap .text_box .typeText::after {
     content: '|';
     animation: blink 1s step-end infinite;
 }
 
-.wrap .intro_img {
+.intro_wrap .intro_img {
     width: 40%;
 }
 
-.wrap .intro_img img {
+.intro_wrap .intro_img img {
     width: 400px;
     border-radius: 50%;
 }
@@ -286,29 +279,163 @@ section {
     }
 }
 
-/*  home
------------------------------------*/
+/*-----------------about------------------*/
+.about {
+    position: relative;
+    background-color: #fff;
+}
+/* rolling */
+.about .back_txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+}
 
-/*  Projects
------------------------------------*/
+.about .back_txt .rolling:nth-child(1) {
+    border-top: 1px solid #efefef;
+}
+
+.back_txt .rolling {
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    color: #fefefe;
+    font-size: 65px;
+    height: calc(100% / 4);
+    line-height: 200px;
+    overflow: hidden;
+}
+
+.back_txt .rolling .track {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: background-color 300ms ease, color 300ms ease;
+    white-space: nowrap;
+}
+
+.back_txt .rolling .track .text {
+    animation: roll 10000ms linear infinite;
+    align-items: center;
+    display: inline-flex;
+    will-change: transform;
+}
+
+.back_txt .rolling .track .text.right {
+    animation-name: roll-right;
+}
+
+.back_txt .rolling .track .text.reverse {
+    animation-duration: 25000ms;
+}
+
+.back_txt .rolling .track:hover {
+    background-color: #efefef;
+    color: #222;
+}
+
+.back_txt .rolling .track:hover .point_txt {
+    color: #beb9a3;
+}
+
+.point_txt {
+    color: #b7a0df;
+    font-weight: 900;
+}
+
+.about_wrap {
+    width: 1300px;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.animated-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.animated-box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: linear-gradient(120deg, #c0e3fb, #efd1e8, #b7a0df);
+    background-size: 300% 300%;
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.animated-box.in:after {
+    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+}
+
+/* motion */
+@keyframes gradient-animation {
+    0% {
+        background-position: 15% 0%;
+    }
+    50% {
+        background-position: 85% 100%;
+    }
+    100% {
+        background-position: 15% 0%;
+    }
+}
+
+@keyframes frame-enter {
+    0% {
+        clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), 7px calc(100% - 7px), 7px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+        clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) calc(100% - 7px), calc(100% - 7px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+        clip-path: polygon(0% 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, calc(100% - 7px) 7px, 100% 0%, 0% 0%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 7px, 7px 0%, 0% 0%);
+    }
+    100% {
+        -webkit-clip-path: polygon(0% 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 7px 100%, 0% 100%);
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes roll-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*-----------------Projects------------------*/
+.skill {
+    background-color: #fff;
+}
+/*-----------------Projects------------------*/
 .project {
     background-color: #efd1e8;
 }
 
-/*  Skills
------------------------------------*/
-.skill {
-    background-color: antiquewhite;
-}
-
-/*  About
------------------------------------*/
-.about {
-    background-color: #fb9b33;
-}
-
-/*  Contact
------------------------------------*/
+/*-----------------Projects------------------*/
 .contact {
     background-color: #fff;
 }
