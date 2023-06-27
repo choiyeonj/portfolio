@@ -92,11 +92,20 @@ let projectSwiper = new Swiper('.project_swiper', {
 const imgSizeUp = document.querySelectorAll('.left_project li');
 const sizeUp = document.getElementById('view');
 const changeImg = document.querySelector('#view .view_img img');
+const closeBtn = document.querySelector('#view .close i');
 
 for (let i = 0; i < imgSizeUp.length; i++) {
     imgSizeUp[i].onclick = function () {
-        //colorImg.src = './images/detail' + (i + 1) + '.jpg';
+        changeImg.src = './images/viewImg_0' + (i + 1) + '.png';
         sizeUp.style.visibility = 'visible';
-        body.style.backgroundColor = '#2222221b';
+        document.querySelector('#view .view_img').scrollTo(0, 0);
+    };
+    closeBtn.onclick = function () {
+        sizeUp.style.visibility = 'hidden';
+    };
+    changeImg.onclick = function () {
+        sizeUp.style.visibility = 'hidden';
     };
 }
+
+/* ---------------go_to_btn--------------- */
