@@ -429,7 +429,7 @@ section {
 
 /*-----------------skills------------------*/
 .skills {
-    background-color: #c0e3fb75;
+    background-color: #fafafa;
 }
 
 .skills .skills_wrap {
@@ -461,6 +461,7 @@ section {
 }
 
 .skills_wrap ul li {
+    position: relative;
     width: 120px;
     height: 120px;
     padding: 25px 25px;
@@ -472,13 +473,31 @@ section {
 
 .skills_wrap ul li img {
     width: 70px;
-    height: 70px;
+}
+
+.skills_wrap ul li .skill_txt {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 180px;
+    height: 100%;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.skills_wrap ul li .skill_txt p {
+    padding: 7px 0;
 }
 
 .skills_wrap ul li:hover {
-    padding-right: 300px;
+    padding-right: 320px;
     transform: translate(8px, 8px);
     box-shadow: none;
+}
+
+.skills_wrap ul li:hover .skill_txt {
+    opacity: 1;
+    transition: all 1s;
 }
 /*-----------------project------------------*/
 .project {

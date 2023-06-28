@@ -109,3 +109,8 @@ for (let i = 0; i < imgSizeUp.length; i++) {
 }
 
 /* ---------------go_to_btn--------------- */
+const viewCode = document.getElementById('code');
+const viewWeb = document.getElementById('website');
+const viewGit = document.getElementById('git');
+
+viewCode.onclick = function () {};
