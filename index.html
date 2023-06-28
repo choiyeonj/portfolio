@@ -121,41 +121,41 @@
                     </ul>
                 </div>
             </div>
-            <nav class="nav_bar">
-                <ul>
-                    <li>
-                        <a href="#home">
-                            <p>HOME</p>
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            <p>ABOUT</p>
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skill">
-                            <p>SKILLS</p>
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#project">
-                            <p>PROJECT</p>
-                            <span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <p>CONTACT</p>
-                            <span></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </header>
+        <nav class="nav_bar">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <p>HOME</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <p>ABOUT</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skill">
+                        <p>SKILLS</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project">
+                        <p>PROJECT</p>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <p>CONTACT</p>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="contents">
             <!-- -----------------intro------------------ -->
@@ -326,14 +326,14 @@
                                     </li>
                                     <div class="project_btn">
                                         <div class="view_code" id="code">코드보기</div>
-                                        <div class="view_web" id="website">웹사이트 보기</div>
-                                        <div class="view_github" id="git">GitHub</div>
+                                        <div class="view_web" id="website" onclick="webOpen()">웹사이트 보기</div>
+                                        <div class="view_github" id="git" onclick="gitOpen()">GitHub</div>
                                     </div>
                                 </ul>
                                 <div class="right_project">
-                                    <h2>일광전구 웹페이지 리뉴얼</h2>
+                                    <h2>일광전구 웹사이트 리뉴얼</h2>
                                     <p>팀 프로젝트</p>
-                                    <p>일광전구 홈페이지의 레이아웃이나 카테고리의 분류 등에서 사용성을 떨어뜨리는 요인이 된 부분을 발견하여, 불안정한 레이아웃과 제품 정보에 대한 접근성, 홈페이지 사용성등의 개선을 통해 사용자가 더욱 편리하게 이용할 수 있는 사이트로 리뉴얼해보겠다는 목적으로 '일광전구' 를 선정하게 되었습니다.</p>
+                                    <p>일광전구 홈페이지의 레이아웃이나 카테고리의 분류 등에서 사용성을 떨어뜨리는 요인이 된 부분을 발견하여, 불안정한 레이아웃과 제품 정보에 대한 접근성, 홈페이지 사용성등의 개선을 통해 사용자가 더욱 편리하게 이용할 수 있는 사이트로 리뉴얼 해보겠다는 목적으로 '일광전구' 를 선정하게 되었습니다.</p>
                                     <p>javaScript와 jQuery, SCSS를 사용하여 제작하였습니다.</p>
                                     <div class="point_color">
                                         <span>포인트 컬러 : </span>
@@ -352,11 +352,38 @@
                         <div class="swiper-pagination"></div>
 
                         <div class="size_up_img" id="view">
-                            <div class="close">
+                            <div class="close img_close">
                                 <i class="fas fa-times"></i>
                             </div>
                             <div class="view_img">
+                                <div class="dark_background"></div>
                                 <img src="./images/viewImg_01.png" alt="viewImg_01" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_popup" id="code_popup">
+                        <div class="close code_close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="code_wrap">
+                            <h1>일광전구 웹사이트 리뉴얼</h1>
+                            <div class="code_text">
+                                <p>프로젝트 기간 : 3주</p>
+                                <p>프로젝트 과정 : 기획안 작성 > 아이디어스케치 > Adobe XD로 프로토타입 제작 > Adobe XD로 시안 제작 > 퍼블리싱 > JavaScript로 기능 구현</p>
+                                <p>
+                                    팀내에서의 역할 : 기획과 아이디어스케치는 모든 팀원이 참여했고, 저는 주로 디테일 페이지의 프로토타입과 시안을 제작하였습니다. <br />
+                                    프로토타입을 토대로 한 코딩은 팀원들 각각 따로 구현하였습니다.
+                                </p>
+                                <p>
+                                    느낀 점 : 무작정 코딩부터 하는 것이 아닌 기획안, 아이디어스케치 등 실무를 미리 경험해 볼 수 있어 뜻 깊었습니다.<br />
+                                    또, 의견을 활발히 교환하는 브레인스토밍 기법으로 많은 아이디어가 나와 팀원들간의 소통이 무척 중요하다는 것을 느꼈습니다.
+                                </p>
+                            </div>
+                            <div class="code_img">
+                                <div class="dark_background"></div>
+                                <h2>이슈 콘텐츠 코드 보기</h2>
+                                <p>집안 각각의 공간에 어울리는 조명을 미리 볼 수 있는 콘텐츠로 스와이퍼로 섹션을 나누고 오른쪽 상품사진에 마우스를 올리면 왼쪽의 큰 이미지가 바뀌게 제작하였습니다.</p>
+                                <img src="./images/carbon.png" alt="code" />
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,8 @@ const menuBtn = $('.menu_btn a');
 const btnSpan = $('.nav_bar ul li a span');
 const page = $('.contents section');
 const aboutBox = $('.animated-box');
+const header = $('.header');
+const skillZoom = $('#skill ul');
 
 // hash이용한 스크롤 페이지
 btn.click(function () {
@@ -28,7 +30,14 @@ $(window).scroll(function () {
             aboutBox.addClass('in');
         }
     });
+    if ($(document).scrollTop() > 50) {
+        header.addClass('header-shadow');
+    } else {
+        header.removeClass('header-shadow');
+    }
 }); //window_scroll
+
+/* -------------header_scroll--------------- */
 
 /* ---------------typing--------------- */
 let typeText = document.querySelector('.typeText');
@@ -67,6 +76,8 @@ function typing() {
 }
 typing();
 
+/* ---------------skill_zoomIn--------------- */
+
 /* ---------------swiper--------------- */
 let projectSwiper = new Swiper('.project_swiper', {
     loop: true,
@@ -92,19 +103,24 @@ let projectSwiper = new Swiper('.project_swiper', {
 const imgSizeUp = document.querySelectorAll('.left_project li');
 const sizeUp = document.getElementById('view');
 const changeImg = document.querySelector('#view .view_img img');
-const closeBtn = document.querySelector('#view .close i');
+const imgCloseBtn = document.querySelector('#view .img_close i');
+const codeCloseBtn = document.querySelector('#code_popup .code_close i');
+const body = document.querySelector('body');
 
 for (let i = 0; i < imgSizeUp.length; i++) {
     imgSizeUp[i].onclick = function () {
         changeImg.src = './images/viewImg_0' + (i + 1) + '.png';
         sizeUp.style.visibility = 'visible';
         document.querySelector('#view .view_img').scrollTo(0, 0);
+        body.style.overflow = 'hidden';
     };
-    closeBtn.onclick = function () {
+    imgCloseBtn.onclick = function () {
         sizeUp.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
     };
     changeImg.onclick = function () {
         sizeUp.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
     };
 }
 
@@ -113,4 +129,20 @@ const viewCode = document.getElementById('code');
 const viewWeb = document.getElementById('website');
 const viewGit = document.getElementById('git');
 
-viewCode.onclick = function () {};
+const codePopup = document.getElementById('code_popup');
+
+viewCode.onclick = function () {
+    codePopup.style.visibility = 'visible';
+    body.style.overflow = 'hidden';
+};
+codeCloseBtn.onclick = function () {
+    codePopup.style.visibility = 'hidden';
+    body.style.removeProperty('overflow');
+};
+
+function webOpen() {
+    window.open('https://choiyeonj.github.io/team_project/');
+}
+function gitOpen() {
+    window.open('https://github.com/choiyeonj');
+}
