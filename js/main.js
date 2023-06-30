@@ -37,8 +37,6 @@ $(window).scroll(function () {
     }
 }); //window_scroll
 
-/* -------------header_scroll--------------- */
-
 /* ---------------typing--------------- */
 let typeText = document.querySelector('.typeText');
 let textToBeTyped = '';
@@ -75,6 +73,22 @@ function typing() {
     );
 }
 typing();
+
+/* ---------------profile_btn--------------- */
+const profileOpenBtn = document.querySelector('.about_left .open_profile');
+const profileCloseBtn = document.querySelector('.about_left .close_profile');
+const openProfile = document.getElementById('open_profile');
+
+profileOpenBtn.onclick = function () {
+    openProfile.style.visibility = 'visible';
+    profileOpenBtn.style.display = 'none';
+    profileCloseBtn.style.display = 'block';
+};
+profileCloseBtn.onclick = function () {
+    openProfile.style.visibility = 'hidden';
+    profileOpenBtn.style.display = 'block';
+    profileCloseBtn.style.display = 'none';
+};
 
 /* ---------------skill_zoomIn--------------- */
 

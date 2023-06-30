@@ -368,6 +368,115 @@ section {
     height: 100%;
     border-radius: 20px;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.animated-box .about_left {
+    width: 500px;
+}
+
+.animated-box .about_left img {
+    width: 300px;
+    height: 320px;
+    border-radius: 80px 80px 0 0;
+    margin: 70px 0 30px 100px;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.1);
+}
+
+.animated-box .about_left ul {
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.animated-box .about_left ul li {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 80px;
+    box-shadow: 5px 5px 16px #b7a0df4a;
+    transition: all 0.3s ease;
+}
+
+.animated-box .about_left ul li:hover {
+    transform: scale(1.1);
+}
+
+.animated-box .about_left ul li:nth-child(1):hover {
+    background-color: #b7a0df;
+}
+.animated-box .about_left ul li:nth-child(2):hover {
+    background-color: #efd1e8;
+}
+.animated-box .about_left ul li:nth-child(3):hover {
+    background-color: #c0e3fb;
+}
+
+.animated-box .about_left .profile_btn {
+    width: 120px;
+    height: 50px;
+    margin: 20px auto 0;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.animated-box .about_left .profile_btn:hover {
+    box-shadow: #b7a0df61 0px 50px 36px -28px inset;
+    border: 1px solid #b7a0df;
+}
+
+.animated-box .about_left .close_profile {
+    display: none;
+}
+
+.animated-box .about_right {
+    padding-right: 96px;
+}
+
+.animated-box .about_right h1 {
+    font-weight: 300;
+    padding: 35px 0;
+}
+
+.animated-box .about_right p {
+    line-height: 35px;
+}
+
+.animated-box .about_right p.about_txt {
+    font-style: italic;
+    color: #b7a0df;
+    font-weight: 500;
+}
+
+.animated-box .proflie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.animated-box .proflie h1 {
+    font-weight: 300;
+    padding: 35px 20px;
+}
+
+.proflie .proflie_info {
+    display: flex;
+    line-height: 35px;
+    padding: 35px;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.proflie .proflie_info .left_profile li:last-child {
+    padding-top: 105px;
 }
 
 .animated-box:after {
@@ -469,7 +578,6 @@ section {
 
 .skills_wrap ul.tool_flex {
     gap: 40px;
-    justify-content: center;
 }
 
 .skills_wrap ul li {
