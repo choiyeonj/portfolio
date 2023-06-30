@@ -160,3 +160,17 @@ function webOpen() {
 function gitOpen() {
     window.open('https://github.com/choiyeonj');
 }
+
+/* ---------------code_tab--------------- */
+const TabBtn = document.querySelectorAll('.code_tab_btn li');
+const codeTab = document.querySelectorAll('.code_img .tab');
+
+for (let i = 0; i < TabBtn.length; i++) {
+    TabBtn[i].onclick = function () {
+        codeTab[i].classList.add('tab_open');
+
+        if (TabBtn[i] !== codeTab[i]) {
+            codeTab.classList.remove('tab_open');
+        }
+    };
+}
