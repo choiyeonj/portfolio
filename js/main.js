@@ -167,10 +167,9 @@ const codeTab = document.querySelectorAll('.code_img .tab');
 
 for (let i = 0; i < TabBtn.length; i++) {
     TabBtn[i].onclick = function () {
+        codeTab.forEach((e) => {
+            e.classList.remove('tab_open');
+        });
         codeTab[i].classList.add('tab_open');
-
-        if (TabBtn[i] !== codeTab[i]) {
-            codeTab.classList.remove('tab_open');
-        }
     };
 }

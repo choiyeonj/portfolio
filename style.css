@@ -852,6 +852,7 @@ section {
 
 .code_img .tab {
     position: absolute;
+    background-color: #fff;
 }
 
 .code_img .tab.tab_open {
