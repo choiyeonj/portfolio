@@ -852,6 +852,7 @@ section {
 
 .code_img .tab {
     position: absolute;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -859,11 +860,23 @@ section {
     display: block;
 }
 
+.code_img .main_code_tab img {
+    width: 800px;
+}
+
 .code_img .sub_code_tab {
     display: none;
 }
+
+.code_img .sub_code_tab img:last-child {
+    width: 905px;
+}
 .code_img .detail_code_tab {
     display: none;
+}
+
+.code_img .detail_code_tab img {
+    width: 850px;
 }
 
 #code_popup .code_wrap .tab_box h2 {
@@ -872,8 +885,7 @@ section {
     padding: 30px 0 15px;
 }
 
-#code_popup .code_wrap .main_code_tab img {
-    width: 800px;
+#code_popup .code_wrap .tab img {
     margin: 0 auto;
 }
 
