@@ -118,7 +118,6 @@ const imgSizeUp = document.querySelectorAll('.left_project li');
 const sizeUp = document.getElementById('view');
 const changeImg = document.querySelector('#view .view_img img');
 const imgCloseBtn = document.querySelector('#view .img_close i');
-const codeCloseBtn = document.querySelector('#code_popup .code_close i');
 const body = document.querySelector('body');
 
 for (let i = 0; i < imgSizeUp.length; i++) {
@@ -139,26 +138,29 @@ for (let i = 0; i < imgSizeUp.length; i++) {
 }
 
 /* ---------------go_to_btn--------------- */
-const viewCode = document.getElementById('code');
-const viewWeb = document.getElementById('website');
-const viewGit = document.getElementById('git');
+const teamPopup = document.getElementById('team_popup');
+const personalPopup = document.getElementById('personal_popup');
+const codeCloseBtn = document.querySelector('#team_popup .code_close i');
+const personalClose = document.querySelector('#personal_popup .code_close i');
 
-const codePopup = document.getElementById('code_popup');
-
-viewCode.onclick = function () {
-    codePopup.style.visibility = 'visible';
-    body.style.overflow = 'hidden';
-};
-codeCloseBtn.onclick = function () {
-    codePopup.style.visibility = 'hidden';
-    body.style.removeProperty('overflow');
-};
-
-function webOpen() {
-    window.open('https://choiyeonj.github.io/team_project/');
+function codeOpen(type) {
+    if (type === 'team') {
+        teamPopup.style.visibility = 'visible';
+        body.style.overflow = 'hidden';
+    } else if (type === 'personal') {
+        personalPopup.style.visibility = 'visible';
+        body.style.overflow = 'hidden';
+    }
 }
-function gitOpen() {
-    window.open('https://github.com/choiyeonj');
+
+function codeClose(type) {
+    if (type === 'team') {
+        teamPopup.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
+    } else if (type === 'personal') {
+        personalPopup.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
+    }
 }
 
 /* ---------------code_tab--------------- */
