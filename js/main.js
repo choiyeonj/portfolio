@@ -90,15 +90,9 @@ profileCloseBtn.onclick = function () {
     profileCloseBtn.style.display = 'none';
 };
 
-/* ---------------skill_zoomIn--------------- */
-
 /* ---------------swiper--------------- */
 let projectSwiper = new Swiper('.project_swiper', {
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
-    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -140,6 +134,8 @@ for (let i = 0; i < imgSizeUp.length; i++) {
 /* ---------------go_to_btn--------------- */
 const teamPopup = document.getElementById('team_popup');
 const personalPopup = document.getElementById('personal_popup');
+const portfolioPopup = document.getElementById('portfolio_popup');
+const personalPopup02 = document.getElementById('personal02_popup');
 const codeCloseBtn = document.querySelector('#team_popup .code_close i');
 const personalClose = document.querySelector('#personal_popup .code_close i');
 
@@ -147,8 +143,14 @@ function codeOpen(type) {
     if (type === 'team') {
         teamPopup.style.visibility = 'visible';
         body.style.overflow = 'hidden';
+    } else if (type === 'portfolio') {
+        portfolioPopup.style.visibility = 'visible';
+        body.style.overflow = 'hidden';
     } else if (type === 'personal') {
         personalPopup.style.visibility = 'visible';
+        body.style.overflow = 'hidden';
+    } else if (type === 'personal02') {
+        personalPopup02.style.visibility = 'visible';
         body.style.overflow = 'hidden';
     }
 }
@@ -157,8 +159,14 @@ function codeClose(type) {
     if (type === 'team') {
         teamPopup.style.visibility = 'hidden';
         body.style.removeProperty('overflow');
+    } else if (type === 'portfolio') {
+        portfolioPopup.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
     } else if (type === 'personal') {
         personalPopup.style.visibility = 'hidden';
+        body.style.removeProperty('overflow');
+    } else if (type === 'personal02') {
+        personalPopup02.style.visibility = 'hidden';
         body.style.removeProperty('overflow');
     }
 }
@@ -174,4 +182,27 @@ for (let i = 0; i < TabBtn.length; i++) {
         });
         codeTab[i].classList.add('tab_open');
     };
+}
+
+/* ---------------contact_txt_sparcle--------------- */
+let starIndex = 0,
+    interval = 1000;
+
+const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = (star) => {
+    star.style.setProperty('--star-left', `${rand(-10, 100)}%`);
+    star.style.setProperty('--star-top', `${rand(-40, 80)}%`);
+
+    star.style.animation = 'none';
+    star.offsetHeight;
+    star.style.animation = '';
+};
+
+for (const star of document.getElementsByClassName('magic-star')) {
+    setTimeout(() => {
+        animate(star);
+
+        setInterval(() => animate(star), 1000);
+    }, starIndex++ * (interval / 3));
 }

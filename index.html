@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>YeonJeong's PORTFOLIO</title>
         <link rel="stylesheet" href="./style.css" />
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -109,15 +110,18 @@
 
         <header class="header">
             <div class="home_btn">
-                <a href="#home">HOME</a>
+                <a href="#home">
+                    <img src="./images/logo.png" alt="logo" />
+                </a>
             </div>
             <div class="menu_btn">
                 <div class="menu">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#skill">SKILLS</a></li>
-                        <li><a href="#project">PROJECT</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#home" class="hover-3">INTRO</a></li>
+                        <li><a href="#about" class="hover-3">ABOUT</a></li>
+                        <li><a href="#skill" class="hover-3">SKILLS</a></li>
+                        <li><a href="#project" class="hover-3">PROJECT</a></li>
+                        <li><a href="#contact" class="hover-3">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -264,34 +268,34 @@
                                 <p>
                                     <strong>SCSS</strong>
                                 </p>
-                                <p>포지션, 플롯의 차이를 알고 플렉스 컨텐츠 배치에 필요한 미디어 쿼리를 사용할 수 있습니다.</p>
+                                <p>SCSS의 문법과 모듈화를 잘 활용하여 스타일 작업을 원활히 할 수 있습니다.</p>
                             </div>
                         </li>
                         <li class="skill">
                             <img src="./images/js.png" alt="js" />
                             <div class="skill_txt">
                                 <p>
-                                    <strong>SCSS</strong>
+                                    <strong>JavaScript</strong>
                                 </p>
-                                <p>포지션, 플롯의 차이를 알고 플렉스 컨텐츠 배치에 필요한 미디어 쿼리를 사용할 수 있습니다.</p>
+                                <p>기본적인 바닐라 자바스크립트가 가능하며, 동적 웹페이지를 구축할 수 있습니다.</p>
                             </div>
                         </li>
                         <li class="skill">
                             <img src="./images/jquery.png" alt="jquery" />
                             <div class="skill_txt">
                                 <p>
-                                    <strong>SCSS</strong>
+                                    <strong>jQuery</strong>
                                 </p>
-                                <p>포지션, 플롯의 차이를 알고 플렉스 컨텐츠 배치에 필요한 미디어 쿼리를 사용할 수 있습니다.</p>
+                                <p>관련 라이브러리와 애니메이션, 여러 메소드들을 잘 활용할 수 있습니다.</p>
                             </div>
                         </li>
                         <li class="skill">
                             <img src="./images/reactjs.png" alt="reactjs" />
                             <div class="skill_txt">
                                 <p>
-                                    <strong>SCSS</strong>
+                                    <strong>React.js</strong>
                                 </p>
-                                <p>포지션, 플롯의 차이를 알고 플렉스 컨텐츠 배치에 필요한 미디어 쿼리를 사용할 수 있습니다.</p>
+                                <p>React 구조와 여러가지 hook들을 잘 알고 있으며, 컴포넌트를 이용한 페이지 구성과 Redux 라이브러리를 사용할 수 있습니다.</p>
                             </div>
                         </li>
                         <li class="skill">
@@ -304,19 +308,44 @@
                             </div>
                         </li>
                     </ul>
+
                     <h2>USING TOOLS</h2>
                     <ul class="tool_flex">
                         <li class="tool">
                             <img src="./images/vscode.png" alt="vscode" />
+                            <div class="skill_txt">
+                                <p>
+                                    <strong>VS Code</strong>
+                                </p>
+                                <p>주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                            </div>
                         </li>
                         <li class="tool">
-                            <img src="./images/xd.png" alt="vscode" />
+                            <img src="./images/xd.png" alt="xd" />
+                            <div class="skill_txt">
+                                <p>
+                                    <strong>VS Code</strong>
+                                </p>
+                                <p>주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                            </div>
                         </li>
                         <li class="tool">
-                            <img src="./images/PS.png" alt="vscode" />
+                            <img src="./images/PS.png" alt="PS" />
+                            <div class="skill_txt">
+                                <p>
+                                    <strong>VS Code</strong>
+                                </p>
+                                <p>주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                            </div>
                         </li>
                         <li class="tool">
-                            <img src="./images/git.png" alt="vscode" />
+                            <img src="./images/git.png" alt="git" />
+                            <div class="skill_txt">
+                                <p>
+                                    <strong>VS Code</strong>
+                                </p>
+                                <p>주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -354,7 +383,7 @@
                                             <a href="http://choiyeonj.github.io/team_project/" target="_blank"> 웹사이트 보기 </a>
                                         </div>
                                         <div class="view_github">
-                                            <a href="http://github.com/choiyeonj" target="_blank" style="color: white"> GitHub </a>
+                                            <a href="https://github.com/choiyeonj/team_project" target="_blank" style="color: white"> GitHub </a>
                                         </div>
                                     </div>
                                 </ul>
@@ -371,7 +400,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="swiper-slide personal">
+                            <li class="swiper-slide portfolio">
                                 <h1>PERSONAL PROJECT</h1>
                                 <ul class="left_project">
                                     <li class="project_preview pc">
@@ -380,25 +409,64 @@
                                             <i class="fas fa-search-plus"></i>
                                         </div>
                                     </li>
-                                    <li class="project_preview sub">
-                                        <img src="./images/project_img_05.png" alt="project_img_02" />
+                                    <div style="width: 200px"></div>
+                                    <div style="width: 200px"></div>
+
+                                    <div class="project_btn">
+                                        <div class="view_code" onclick="codeOpen('portfolio')">코드보기</div>
+                                        <div class="view_web" style="display: none">
+                                            <a href="http://choiyeonj.github.io/team_project/" target="_blank"> 웹사이트 보기 </a>
+                                        </div>
+                                        <div class="view_github" style="margin-top: 20px">
+                                            <a href="https://github.com/choiyeonj/personal-project" target="_blank" style="color: white"> GitHub </a>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <div class="right_project">
+                                    <h2>포트폴리오</h2>
+                                    <p style="font-weight: 500">개인 프로젝트</p>
+                                    <p>
+                                        6개월동안의 국비교육을 수료하고 배운 것을 바탕으로 만든 포트폴리오 입니다. <br />
+                                        컨셉은 몽환적 + Simple로 제 첫 프로젝트였던 러쉬에서 영감을 받아 입욕제를 푼 욕조처럼 몽환적인 배경에 물결 애니메이션을 CSS로 구현 해 보았습니다. <br />
+                                        처음으로 프로젝트를 진행했을 때의 떨림과 끝났을 때의 보람을 항상 기억하며 초심을 잃지않는 개발자가 되겠습니다.
+                                    </p>
+                                    <p>jQuery와 JavaScript를 이용해 제작하였습니다.</p>
+                                    <div class="point_color">
+                                        <span>포인트 컬러 : </span>
+                                        <span>#b7a0df</span>
+                                        <span>#efd1e8</span>
+                                        <span>#c0e3fb</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide personal">
+                                <h1>PERSONAL PROJECT</h1>
+                                <ul class="left_project">
+                                    <li class="project_preview pc">
+                                        <img src="./images/project_img_05.png" alt="project_img_01" />
                                         <div class="plus_icon">
                                             <i class="fas fa-search-plus"></i>
                                         </div>
                                     </li>
                                     <li class="project_preview sub">
-                                        <img src="./images/project_img_06.png" alt="project_img_03" />
+                                        <img src="./images/project_img_06.png" alt="project_img_02" />
+                                        <div class="plus_icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </li>
+                                    <li class="project_preview sub">
+                                        <img src="./images/project_img_07.png" alt="project_img_03" />
                                         <div class="plus_icon">
                                             <i class="fas fa-search-plus"></i>
                                         </div>
                                     </li>
                                     <div class="project_btn">
-                                        <div class="view_code" onclick="codeOpen('personal')">코드보기</div>
+                                        <div class="view_code" onclick="codeOpen('personal')">READ ME</div>
                                         <div class="view_web">
                                             <a href="http://choiyeonj.github.io/personal-project/" target="_blank"> 웹사이트 보기 </a>
                                         </div>
                                         <div class="view_github">
-                                            <a href="http://github.com/choiyeonj" target="_blank" style="color: white"> GitHub </a>
+                                            <a href="https://github.com/choiyeonj/personal-project" target="_blank" style="color: white"> GitHub </a>
                                         </div>
                                     </div>
                                 </ul>
@@ -414,8 +482,44 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="swiper-slide"></li>
-                            <li class="swiper-slide"></li>
+                            <li class="swiper-slide personal_02">
+                                <h1>PERSONAL PROJECT</h1>
+                                <ul class="left_project">
+                                    <li class="project_preview pc">
+                                        <img src="./images/project_img_08.png" alt="project_img_01" />
+                                        <div class="plus_icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </li>
+                                    <li class="project_preview sub">
+                                        <img src="./images/project_img_09.png" alt="project_img_02" />
+                                        <div class="plus_icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </li>
+                                    <li class="project_preview sub">
+                                        <img src="./images/project_img_06.png" alt="project_img_03" />
+                                        <div class="plus_icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </li>
+                                    <div class="project_btn">
+                                        <div class="view_code" onclick="codeOpen('personal02')">READ ME</div>
+                                        <div class="view_web">
+                                            <a href="http://choiyeonj.github.io/personal-project/" target="_blank"> 웹사이트 보기 </a>
+                                        </div>
+                                        <div class="view_github">
+                                            <a href="https://github.com/choiyeonj/personal-project" target="_blank" style="color: white"> GitHub </a>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <div class="right_project">
+                                    <h2>Login, Join 폼</h2>
+                                    <p style="font-weight: 500">개인 프로젝트</p>
+                                    <p>팀프로젝트에 맞춰 제작한 로그인, 회원가입 폼입니다.</p>
+                                    <p>JavaScript를 활용해, 포커싱과 경고창으로 조건에 부합해야만 회원가입이 되도록 제작하였습니다.</p>
+                                </div>
+                            </li>
                         </ul>
 
                         <div class="swiper-button-next"></div>
@@ -468,7 +572,12 @@
                                         <h2>이슈 콘텐츠</h2>
                                         <p>· 집안 각각의 공간에 어울리는 조명을 미리 볼 수 있는 콘텐츠로 스와이퍼로 섹션을 나누고 오른쪽 상품사진에 마우스를 올리면 왼쪽의 큰 이미지가 바뀌게 제작하였습니다.</p>
                                         <img src="./images/main.gif" alt="main.gif" />
-                                        <img src="./images/main_issue.png" alt="main_code" />
+                                        <iframe
+                                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=611&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520livingMain%2520%253D%2520document.querySelector%28%27.living_main%2520li%2520img%27%29%253B%250Aconst%2520livingImg%2520%253D%2520document.querySelectorAll%28%27.living_img%2520li%2520img%27%29%253B%250A%250Aconst%2520diningMain%2520%253D%2520document.querySelector%28%27.dining_main%2520li%2520img%27%29%253B%250Aconst%2520diningImg%2520%253D%2520document.querySelectorAll%28%27.dining_img%2520li%2520img%27%29%253B%250A%250Aconst%2520bedMain%2520%253D%2520document.querySelector%28%27.bed_main%2520li%2520img%27%29%253B%250Aconst%2520bedImg%2520%253D%2520document.querySelectorAll%28%27.bed_img%2520li%2520img%27%29%253B%250A%250Aconst%2520tableMain%2520%253D%2520document.querySelector%28%27.table_main%2520li%2520img%27%29%253B%250Aconst%2520tableImg%2520%253D%2520document.querySelectorAll%28%27.table_img%2520li%2520img%27%29%253B%250A%250Afor%2520%28let%2520i%2520%253D%25200%253B%2520i%2520%253C%2520livingImg.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520livingImg%255Bi%255D.onmouseover%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520livingMain.src%2520%253D%2520%27.%252Fimages%252Fissue_living%27%2520%252B%2520%28i%2520%252B%25201%29%2520%252B%2520%27.png%27%253B%250A%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520diningImg%255Bi%255D.onmouseover%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520diningMain.src%2520%253D%2520%27.%252Fimages%252Fissue_dining%27%2520%252B%2520%28i%2520%252B%25201%29%2520%252B%2520%27.png%27%253B%250A%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520bedImg%255Bi%255D.onmouseover%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520bedMain.src%2520%253D%2520%27.%252Fimages%252Fissue_bed%27%2520%252B%2520%28i%2520%252B%25201%29%2520%252B%2520%27.png%27%253B%250A%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520tableImg%255Bi%255D.onmouseover%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520tableMain.src%2520%253D%2520%27.%252Fimages%252Fissue_table%27%2520%252B%2520%28i%2520%252B%25201%29%2520%252B%2520%27.png%27%253B%250A%2520%2520%2520%2520%257D%253B%250A%257D"
+                                            style="width: 850px; height: 600px; border: 0; transform: scale(1); overflow: hidden; margin: 30px 70px"
+                                            sandbox="allow-scripts allow-same-origin"
+                                        >
+                                        </iframe>
                                     </div>
                                 </div>
                                 <div class="sub_code_tab tab">
@@ -476,7 +585,12 @@
                                         <h2>페이지 네이션</h2>
                                         <p>· 동적데이터를 이용한 페이지네이션입니다.</p>
                                         <img src="./images/sub.gif" alt="sub.gif" />
-                                        <img src="./images/sub_code.png" alt="sub_code" />
+                                        <iframe
+                                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=774&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520pagenation%2520*%252F%250A%250Alet%2520currentPage%2520%253D%25201%253B%250Aconst%2520itemsPerPage%2520%253D%252016%253B%2520%252F%252F%2520%25ED%2595%259C%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EC%2597%2590%2520%25ED%2591%259C%25EC%258B%259C%25ED%2595%25A0%2520%25ED%2595%25AD%25EB%25AA%25A9%25EC%259D%2598%2520%25EC%2588%2598%250A%250Afunction%2520createMainBoxes%28bestProduct%252C%2520page%29%2520%257B%250A%2520%2520%2520%2520const%2520%2524mainContainer%2520%253D%2520%2524%28%27.product_list%27%29%253B%250A%2520%2520%2520%2520%2524mainContainer.empty%28%29%253B%2520%252F%252F%2520%25ED%2598%2584%25EC%259E%25AC%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EC%259D%2598%2520%25EB%2582%25B4%25EC%259A%25A9%25EC%259D%2584%2520%25EC%25A7%2580%25EC%259B%2581%25EB%258B%2588%25EB%258B%25A4.%250A%250A%2520%2520%2520%2520const%2520start%2520%253D%2520%28page%2520-%25201%29%2520*%2520itemsPerPage%253B%2520%252F%252F%2520%25EC%258B%259C%25EC%259E%2591%2520%25EC%259D%25B8%25EB%258D%25B1%25EC%258A%25A4%250A%2520%2520%2520%2520const%2520end%2520%253D%2520start%2520%252B%2520itemsPerPage%253B%2520%252F%252F%2520%25EB%2581%259D%2520%25EC%259D%25B8%25EB%258D%25B1%25EC%258A%25A4%250A%250A%2520%2520%2520%2520%252F%252F%2520%25EC%258B%259C%25EC%259E%2591%25EA%25B3%25BC%2520%25EB%2581%259D%2520%25EC%259D%25B8%25EB%258D%25B1%25EC%258A%25A4%2520%25EC%2582%25AC%25EC%259D%25B4%25EC%259D%2598%2520%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%25EB%25A7%258C%2520%25EA%25B0%2580%25EC%25A0%25B8%25EC%2598%25B5%25EB%258B%2588%25EB%258B%25A4.%250A%2520%2520%2520%2520const%2520pageItems%2520%253D%2520bestProduct.slice%28start%252C%2520end%29%253B%250A%2520%2520%2520%2520console.log%28bestProduct%29%253B%250A%250A%2520%2520%2520%2520for%2520%28let%2520i%2520%253D%25200%253B%2520i%2520%253C%2520pageItems.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520const%2520product%2520%253D%2520pageItems%255Bi%255D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520let%2520%2524mainBox%2520%253D%2520%2524%28%2560%253Ca%2520href%253D%2522detail.html%253Fid%253D%2524%257Bproduct.id%257D%2522%2520class%253D%2522main_box%2522%253E%253C%252Fa%253E%2560%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28product.best%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2524mainBox.append%28%27%253Cdiv%2520class%253D%2522best%2522%253EBEST%253C%252Fdiv%253E%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2524mainBox.append%28%2560%253Cimg%2520src%253D%2522%2524%257Bproduct.src%257D%2522%2520alt%253D%2522%2522%253E%2560%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520let%2520%2524textBox%2520%253D%2520%2524%28%27%253Cdiv%2520class%253D%2522pro_txt_box%2522%253E%253C%252Fdiv%253E%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2524textBox.append%28%2560%253Cp%2520class%253D%2522product_name%2522%253E%2524%257Bproduct.name%257D%253C%252Fp%253E%2560%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2524textBox.append%28%2560%253Cp%2520class%253D%2522product_price%2522%253E%2524%257Bproduct.price%257D%25EC%259B%2590%253C%252Fp%253E%2560%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2524mainBox.append%28%2524textBox%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2524mainContainer.append%28%2524mainBox%29%253B%250A%2520%2520%2520%2520%257D%250A%257D%250A%250A%252F%252F%2520%25EA%25B0%2580%25EC%259E%25A5%2520%25EC%25B2%25AB%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EC%2599%2580%2520%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%2520%25EB%25B2%2588%25ED%2598%25B8%25EB%25A5%25BC%2520%25EB%25B3%2580%25EC%2588%2598%25EC%2597%2590%2520%25ED%2595%25A0%25EB%258B%25B9%25ED%2595%25A9%25EB%258B%2588%25EB%258B%25A4.%250Aconst%2520firstPage%2520%253D%25201%253B%250Aconst%2520lastPage%2520%253D%2520Math.ceil%28shoppingList.length%2520%252F%2520itemsPerPage%29%253B%250A%250A%252F%252F%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%2520%25EB%25B2%2584%25ED%258A%25BC%2520%25ED%2581%25B4%25EB%25A6%25AD%2520%25EC%259D%25B4%25EB%25B2%25A4%25ED%258A%25B8%250A%2524%28%27.paging%2520%253E%2520div%27%29.click%28function%2520%28%29%2520%257B%250A%2520%2520%2520%2520const%2520%2524this%2520%253D%2520%2524%28this%29%253B%250A%2520%2520%2520%2520const%2520buttonText%2520%253D%2520%2524this.text%28%29%253B%250A%250A%2520%2520%2520%2520%2524%28%27.paging%2520%253E%2520div%27%29.removeClass%28%27active%27%29%253B%250A%250A%2520%2520%2520%2520switch%2520%28buttonText%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520case%2520%27%253C%253C%27%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520currentPage%2520%253D%2520firstPage%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520case%2520%27%253C%27%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28currentPage%2520%253E%2520firstPage%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520%25ED%2598%2584%25EC%259E%25AC%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EA%25B0%2580%2520%25EC%25B2%25AB%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EB%25B3%25B4%25EB%258B%25A4%2520%25ED%2581%25AC%25EB%25A9%25B4%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520currentPage--%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520case%2520%27%253E%27%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28currentPage%2520%253C%2520lastPage%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520%25ED%2598%2584%25EC%259E%25AC%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EA%25B0%2580%2520%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589%2520%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%25EB%25B3%25B4%25EB%258B%25A4%2520%25EC%259E%2591%25EC%259C%25BC%25EB%25A9%25B4%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520currentPage%252B%252B%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520case%2520%27%253E%253E%27%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520currentPage%2520%253D%2520lastPage%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520default%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520const%2520pageNo%2520%253D%2520parseInt%28buttonText%252C%252010%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28%21isNaN%28pageNo%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cur"
+                                            style="width: 774px; height: 1602px; border: 0; transform: scale(1); overflow: hidden; margin: 30px 100px"
+                                            sandbox="allow-scripts allow-same-origin"
+                                        >
+                                        </iframe>
                                     </div>
                                 </div>
                                 <div class="detail_code_tab tab">
@@ -484,13 +598,61 @@
                                         <h2>색변경 버튼</h2>
                                         <p>· switch case문과 forEach를 사용하여 버튼을 누르면 왼쪽에 제품색이 바뀌고, 오른쪽에 텍스트도 바뀌게 제작하였습니다.</p>
                                         <img src="./images/detail_01.gif" alt="detail.gif" />
-                                        <img src="./images/detail_color_btn.png" alt="detail_code" />
+                                        <iframe
+                                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=611&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520-------------color_button---------------%2520*%252F%250Aconst%2520colorImg%2520%253D%2520document.getElementById%28%27color_img%27%29%253B%250Aconst%2520colorBtn%2520%253D%2520document.querySelectorAll%28%27.color_option%2520li%27%29%253B%250Aconst%2520colorTxt%2520%253D%2520document.querySelector%28%27.color_option%2520.color_box%2520.color_txt%27%29%253B%250A%250Afor%2520%28let%2520i%2520%253D%25200%253B%2520i%2520%253C%2520colorBtn.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520colorBtn%255Bi%255D.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520colorImg.src%2520%253D%2520%27.%252Fimages%252Fdetail%27%2520%252B%2520%28i%2520%252B%25201%29%2520%252B%2520%27.jpg%27%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520switch%2520%28colorBtn%255Bi%255D%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520case%2520colorBtn%255B0%255D%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520colorTxt.innerHTML%2520%253D%2520%27ALL%2520BUTTER%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520case%2520colorBtn%255B1%255D%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520colorTxt.innerHTML%2520%253D%2520%27WHITE%2520%2526%2520ICE%2520BLUE%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520case%2520colorBtn%255B2%255D%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520colorTxt.innerHTML%2520%253D%2520%27PEACH%2520%2526%2520DEEP%2520GREEN%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520break%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D%253B%250A%250A%2520%2520%2520%2520function%2520handleClick%28event%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520colorBtn.forEach%28%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520e.classList.remove%28%27click%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520event.target.classList.add%28%27click%27%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520colorBtn.forEach%28%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520e.addEventListener%28%27click%27%252C%2520handleClick%29%253B%250A%2520%2520%2520%2520%257D%29%253B%250A%257D"
+                                            style="width: 850px; height: 750px; border: 0; transform: scale(1); overflow: hidden; margin: 30px 70px"
+                                            sandbox="allow-scripts allow-same-origin"
+                                        >
+                                        </iframe>
                                     </div>
                                     <div class="tab_box">
                                         <h2>제품 수량 증감 버튼</h2>
                                         <p>· dataset과 toString을 활용하여 수량의 증감에 따라 가격이 바뀌고, 셋째자리마다 자동으로 콤마가 찍히게 제작하였습니다.</p>
                                         <img src="./images/detail_02.gif" style="width: 550px" alt="detail.gif" />
-                                        <img src="./images/detail_price.png" alt="detail_code" />
+                                        <iframe
+                                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=735&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=%252F*%2520-------------price_count---------------%2520*%252F%250Alet%2520price%2520%253D%2520document.querySelector%28%27.total_price%2520.it_pay%27%29%253B%250Alet%2520productPrice%2520%253D%2520price.dataset.price%253B%250Alet%2520totalPrice%2520%253D%2520price.innerHTML.toString%28%29.replace%28%252F%255CB%28%253F%253D%28%255Cd%257B3%257D%29%252B%28%253F%21%255Cd%29%29%252Fg%252C%2520%27%252C%27%29%253B%250A%250Aprice.innerHTML%2520%253D%2520totalPrice%253B%250A%250Aconst%2520plusBtn%2520%253D%2520document.getElementById%28%27plus%27%29%253B%250Aconst%2520minusBtn%2520%253D%2520document.getElementById%28%27minus%27%29%253B%250Aconst%2520resultElement%2520%253D%2520document.getElementById%28%27result%27%29%253B%250Alet%2520totalNumber%2520%253D%2520resultElement.innerHTML%253B%250A%250AplusBtn.addEventListener%28%27click%27%252C%2520plusCount%29%253B%250AminusBtn.addEventListener%28%27click%27%252C%2520minusCount%29%253B%250A%250Afunction%2520plusCount%28%29%2520%257B%250A%2520%2520%2520%2520totalNumber%2520%253D%2520parseInt%28totalNumber%29%2520%252B%25201%253B%250A%2520%2520%2520%2520resultElement.innerHTML%2520%253D%2520totalNumber%253B%250A%2520%2520%250A%2520%2520%2520%2520let%2520setPrice%2520%253D%2520totalNumber%2520*%2520productPrice%253B%250A%2520%2520%250A%2520%2520%2520%2520price.innerHTML%2520%253D%2520setPrice.toString%28%29.replace%28%252F%255CB%28%253F%253D%28%255Cd%257B3%257D%29%252B%28%253F%21%255Cd%29%29%252Fg%252C%2520%27%252C%27%29%253B%250A%2520%2520%250A%2520%2520%2520%2520%252F%252Fconsole.log%28totalNumber%29%253B%250A%2520%2520%2520%2520%252F%252Fconsole.log%28setPrice%29%253B%250A%250A%2520%2520%2520%2520if%2520%28totalNumber%2520%253C%25201%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520alert%28%27%25EC%2588%2598%25EB%259F%2589%25EC%259D%2580%25201%25EA%25B0%259C%2520%25EC%259D%25B4%25EC%2583%2581%2520%25EC%259E%2585%25EB%25A0%25A5%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%258B%25AD%25EC%258B%259C%25EC%2598%25A4.%27%29%253B%250A%2520%2520%2520%2520%257D%2520else%2520if%2520%28totalNumber%2520%253E%252010%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520alert%28%27%25EC%25A3%2584%25EC%2586%25A1%25ED%2595%25A9%25EB%258B%2588%25EB%258B%25A4.%2520%25EC%259E%25AC%25EA%25B3%25A0%25EA%25B0%2580%2520%25EB%25B6%2580%25EC%25A1%25B1%25ED%2595%25A9%25EB%258B%2588%25EB%258B%25A4.%27%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520return%2520setPrice%253B%250A%257D%250A%250Afunction%2520minusCount%28%29%2520%257B%250A%2520%2520%2520%2520totalNumber%2520%253D%2520parseInt%28totalNumber%29%2520-%25201%253B%250A%2520%2520%2520%2520resultElement.innerHTML%2520%253D%2520totalNumber%253B%250A%2520%2520%250A%2520%2520%2520%2520let%2520setPrice%2520%253D%2520totalNumber%2520*%2520productPrice%253B%250A%2520%2520%250A%2520%2520%2520%2520price.innerHTML%2520%253D%2520setPrice.toString%28%29.replace%28%252F%255CB%28%253F%253D%28%255Cd%257B3%257D%29%252B%28%253F%21%255Cd%29%29%252Fg%252C%2520%27%252C%27%29%253B%250A%2520%2520%2520%2520%250A%2520%2520%2509%252F%252Fconsole.log%28totalNumber%29%253B%250A%2520%2520%2520%2520%252F%252Fconsole.log%28setPrice%29%253B%250A%250A%2520%2520%2520%2520if%2520%28totalNumber%2520%253C%25201%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520alert%28%27%25EC%2588%2598%25EB%259F%2589%25EC%259D%2580%25201%25EA%25B0%259C%2520%25EC%259D%25B4%25EC%2583%2581%2520%25EC%259E%2585%25EB%25A0%25A5%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%258B%25AD%25EC%258B%259C%25EC%2598%25A4.%27%29%253B%250A%2520%2520%2520%2520%257D%2520else%2520if%2520%28totalNumber%2520%253E%252010%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520alert%28%27%25EC%25A3%2584%25EC%2586%25A1%25ED%2595%25A9%25EB%258B%2588%25EB%258B%25A4.%2520%25EC%259E%25AC%25EA%25B3%25A0%25EA%25B0%2580%2520%25EB%25B6%2580%25EC%25A1%25B1%25ED%2595%25A9%25EB%258B%2588%25EB%258B%25A4.%27%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520return%2520setPrice%253B%250A%257D"
+                                            style="width: 850px; height: 1100px; border: 0; transform: scale(1); overflow: hidden; margin: 30px 70px"
+                                            sandbox="allow-scripts allow-same-origin"
+                                        >
+                                        </iframe>
+                                    </div>
+                                    <div class="tab_box">
+                                        <h2>리뷰 작성</h2>
+                                        <p>· 리뷰를 작성하고 등록 버튼을 누르면 별점과 내용, 이미지 파일이 제일 상단에 등록 되도록 제작하였습니다.</p>
+                                        <img src="./images/detail_03.png" style="width: 550px" alt="detail.gif" />
+                                        <img src="./images/review_code.png" alt="detail_code" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_popup" id="portfolio_popup">
+                        <div class="close code_close">
+                            <i class="fas fa-times" onclick="codeClose('portfolio')"></i>
+                        </div>
+                        <div class="code_wrap">
+                            <h1>포트폴리오</h1>
+                            <div class="code_text">
+                                <p>⏰프로젝트 기간</p>
+                                <span>· 3주</span>
+                                <p>💻프로젝트 과정</p>
+                                <span>· 기획안 작성 > 아이디어스케치 > Adobe XD로 시안 제작 > 퍼블리싱 > jQuery로 기능 구현</span>
+                                <p>👩 메인 타겟</p>
+                                <span> · 코로나 19 로 인해 상시 마스크를 쓰게 되 면서 생긴 트러블 등 각종 피부 고민을 가 지고 있는 20 대 , 30 대 여성 </span>
+                                <p>👦 서브 타겟</p>
+                                <span> · 요즘 사회적 이슈인 환경문제에 민감 하고 , 호기심이 많아 비건 제품을 사용 해 볼까 하는 젊은 세대</span>
+                                <p>🏆느낀 점</p>
+                                <span> · 처음으로 진행했던 프로젝트입니다. 웹사이트 기획을 할 때, 여러가지 넣고싶은 콘텐츠가 많아 과연 구현할 수 있을까? 생각이들어 콘텐츠 짜기가 어려웠습니다. 하지만 코딩을 하면서 다양한 기기의 사용자가 편하게 이용할 수 있는 UI를 만들고자 노력하였습니다. </span>
+                            </div>
+                            <div class="code_img">
+                                <div class="dark_background"></div>
+                                <div class="tab_box">
+                                    <h2>콘텐츠 구성</h2>
+                                    <p>· 전체적으로 jQuery slick-slide로 제작하였고, 반응형웹으로 다양한 환경에서 사용 가능합니다.</p>
+                                    <video muted autoplay controls src="./images/녹음 2023-07-09 200911.mp4"></video>
+                                    <div class="slick_code">
+                                        <img src="./images/personal_issue.png" alt="personal_issue" style="width: 400px" />
+                                        <img src="./images/personal_response.png" alt="personal_response" style="width: 486px" />
                                     </div>
                                 </div>
                             </div>
@@ -516,41 +678,69 @@
                             </div>
                             <div class="code_img">
                                 <div class="dark_background"></div>
+                                <div class="tab_box">
+                                    <h2>콘텐츠 구성</h2>
+                                    <p>· 전체적으로 jQuery slick-slide로 제작하였고, 반응형웹으로 다양한 환경에서 사용 가능합니다.</p>
+                                    <video muted autoplay controls src="./images/녹음 2023-07-09 200911.mp4"></video>
+                                    <div class="slick_code">
+                                        <img src="./images/personal_issue.png" alt="personal_issue" style="width: 400px" />
+                                        <img src="./images/personal_response.png" alt="personal_response" style="width: 486px" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_popup" id="personal02_popup">
+                        <div class="close code_close">
+                            <i class="fas fa-times" onclick="codeClose('personal02')"></i>
+                        </div>
+                        <div class="code_wrap">
+                            <h1>로그인 회원가입 폼</h1>
+                            <div class="code_text">
+                                <p>⏰프로젝트 기간</p>
+                                <span>· 2주</span>
+                                <p>💻프로젝트 과정</p>
+                                <span>· Adobe XD로 프로토타입 제작 > > 퍼블리싱 > JavaScript로 기능구현</span>
+                                <p>🏆느낀 점</p>
+                                <span> · 동적데이터 활용이 미흡할 때 제작해서 아직 부족한 부분이 많습니다. DB를 더 공부해서 아이디찾기, 비밀번호 찾기, 비회원조회 등 기능을 추후 추가 할 예정입니다. </span>
+                            </div>
+                            <div class="code_img">
+                                <div class="dark_background"></div>
                                 <div class="code_tab_btn">
                                     <ul>
-                                        <li>메인페이지 코드보기</li>
-                                        <li>서브페이지 코드보기</li>
-                                        <li>디테일페이지 코드보기</li>
+                                        <li>로그인 코드보기</li>
+                                        <li>회원가입 코드보기</li>
                                     </ul>
                                 </div>
                                 <div class="main_code_tab tab">
                                     <div class="tab_box">
-                                        <h2>이슈 콘텐츠</h2>
-                                        <p>· 집안 각각의 공간에 어울리는 조명을 미리 볼 수 있는 콘텐츠로 스와이퍼로 섹션을 나누고 오른쪽 상품사진에 마우스를 올리면 왼쪽의 큰 이미지가 바뀌게 제작하였습니다.</p>
+                                        <h2>아이디 비밀번호 입력</h2>
+                                        <p>· 미리 정해둔 아이디,비밀번호를 입력하면 경고창으로 환영한다는 메세지가 뜨고 메인페이지로 이동하게 제작하였습니다.</p>
                                         <img src="./images/main.gif" alt="main.gif" />
-                                        <img src="./images/main_issue.png" alt="main_code" />
+                                        <img src="./images/login_code.png" alt="login_code" />
+                                    </div>
+                                    <div class="tab_box">
+                                        <h2>CapsLock 알림</h2>
+                                        <p>· keyup이벤트로 CapsLock이 활성화 되어있으면 경고 문구가 나오게 제작하였습니다.</p>
+                                        <img src="./images/main.gif" alt="main.gif" />
+                                        <img src="./images/login_code02.png" style="padding: 50px 0" alt="login_code02" />
                                     </div>
                                 </div>
                                 <div class="sub_code_tab tab">
                                     <div class="tab_box">
-                                        <h2>페이지 네이션</h2>
-                                        <p>· 동적데이터를 이용한 페이지네이션입니다.</p>
+                                        <h2>아이디 유효성 검사</h2>
                                         <img src="./images/sub.gif" alt="sub.gif" />
-                                        <img src="./images/sub_code.png" alt="sub_code" />
-                                    </div>
-                                </div>
-                                <div class="detail_code_tab tab">
-                                    <div class="tab_box">
-                                        <h2>색변경 버튼</h2>
-                                        <p>· switch case문과 forEach를 사용하여 버튼을 누르면 왼쪽에 제품색이 바뀌고, 오른쪽에 텍스트도 바뀌게 제작하였습니다.</p>
-                                        <img src="./images/detail_01.gif" alt="detail.gif" />
-                                        <img src="./images/detail_color_btn.png" alt="detail_code" />
+                                        <img src="./images/join_code.png" alt="join_code" />
                                     </div>
                                     <div class="tab_box">
-                                        <h2>제품 수량 증감 버튼</h2>
-                                        <p>· dataset과 toString을 활용하여 수량의 증감에 따라 가격이 바뀌고, 셋째자리마다 자동으로 콤마가 찍히게 제작하였습니다.</p>
-                                        <img src="./images/detail_02.gif" style="width: 550px" alt="detail.gif" />
-                                        <img src="./images/detail_price.png" alt="detail_code" />
+                                        <h2>비밀번호 유효성 검사</h2>
+                                        <img src="./images/sub.gif" alt="sub.gif" />
+                                        <img src="./images/join_code02.png" style="width: 828px" alt="join_code02" />
+                                    </div>
+                                    <div class="tab_box">
+                                        <h2>약관동의 체크</h2>
+                                        <img src="./images/sub.gif" alt="sub.gif" />
+                                        <img src="./images/join_code03.png" style="width: 857px" alt="join_code03" />
                                     </div>
                                 </div>
                             </div>
@@ -560,7 +750,52 @@
             </section>
 
             <!-- -----------------contact------------------ -->
-            <section class="contact" id="contact"></section>
+            <section class="contact" id="contact">
+                <div class="contact_wrap wrap">
+                    <h1>CONTACT</h1>
+                    <div class="contact_box">
+                        <ul>
+                            <li>Phone : 010-5110-5362</li>
+                            <li>E-mail : cyj121585@gmail.com</li>
+                            <li><a href="https://github.com/choiyeonj">GitHub : https://github.com/choiyeonj</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+                <div class="wave_back">
+                    <h1>
+                        저의 포트폴리오를 봐 주셔서 감사합니다. <br />
+                        <span class="magic">
+                            <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                            </span>
+                            <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                            </span>
+                            <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                            </span>
+                            <span class="magic-text">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다</span>
+                        </span>
+                    </h1>
+                </div>
+            </section>
         </div>
         <!--Waves end-->
     </body>
