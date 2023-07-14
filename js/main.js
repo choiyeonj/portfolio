@@ -184,6 +184,27 @@ for (let i = 0; i < TabBtn.length; i++) {
     };
 }
 
+/* ---------------accordion--------------- */
+const accBox = document.getElementsByClassName('panel');
+let acc = document.getElementsByClassName('accordion');
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function () {
+        slideUp();
+
+        this.classList.toggle('active');
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+    });
+}
+function slideUp() {
+    accBox.maxHeight = 0;
+}
+
 /* ---------------contact_txt_sparcle--------------- */
 let starIndex = 0,
     interval = 1000;

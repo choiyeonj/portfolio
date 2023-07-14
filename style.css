@@ -72,7 +72,8 @@ section {
 }
 
 .header .home_btn img {
-    width: 100px;
+    width: 80px;
+    margin-top: 10px;
 }
 
 .header .menu_btn {
@@ -589,8 +590,8 @@ section {
 .project_wrap h1 {
     font-size: 32px;
     font-weight: 300;
-    margin-bottom: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .project_swiper > li {
@@ -632,7 +633,7 @@ section {
     color: #222;
 }
 
-.project_swiper .right_project p {
+.project_swiper .right_project > p {
     padding-bottom: 15px;
 }
 
@@ -651,41 +652,47 @@ section {
     text-align: center;
     font-size: 12px;
 }
-.project_swiper .right_project span:nth-child(1) {
+.right_project .point_color span:nth-child(1) {
     width: 100px;
     font-size: 14px;
 }
-.project_swiper .team .right_project span:nth-child(2) {
+.team .right_project .point_color span:nth-child(2) {
     background-color: #fd8234;
 }
 
-.project_swiper .team .right_project span:nth-child(3) {
+.team .right_project .point_color span:nth-child(3) {
     background-color: #efe8da;
 }
-.project_swiper .team .right_project span:nth-child(4) {
+.team .right_project .point_color span:nth-child(4) {
     background-color: #261c13;
     color: #fff;
 }
 
-.project_swiper .portfolio .right_project span:nth-child(2) {
+.portfolio .right_project .point_color span:nth-child(2) {
     background-color: #b7a0df;
 }
 
-.project_swiper .portfolio .right_project span:nth-child(3) {
+.portfolio .right_project .point_color span:nth-child(3) {
     background-color: #efd1e8;
 }
-.project_swiper .portfolio .right_project span:nth-child(4) {
+.portfolio .right_project .point_color span:nth-child(4) {
     background-color: #c0e3fb;
 }
 
-.project_swiper .personal .right_project span:nth-child(2) {
+.personal .right_project .point_color span:nth-child(2) {
     background-color: #865dff;
     color: #fff;
 }
 
-.project_swiper .personal .right_project span:nth-child(3) {
+.personal .right_project .point_color span:nth-child(3) {
     background-color: #222;
     color: #fff;
+}
+
+.portfolio .right_project .project_text {
+    border: 1px solid #b7a0df;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .project_wrap .project_swiper .project_preview {
@@ -873,23 +880,37 @@ section {
     background-color: #fff;
 }
 
-.code_popup .code_wrap .code_text {
-    border: 1px solid #b7a0df;
-    padding: 30px;
-    border-radius: 15px;
+.accordion {
+    padding-left: 20px;
+    cursor: pointer;
+}
+.accordion.active,
+.accordion:hover {
+    box-shadow: #b7a0df61 0px 50px 36px -28px inset;
+    transition: all 0.3s;
 }
 
-.code_popup .code_wrap .code_text p {
-    font-weight: 500;
+.code_popup .code_wrap .panel {
+    height: 100%;
+    max-height: 0;
+    border: 1px solid #b7a0df;
+    overflow: hidden;
+    font-size: 13px;
+    padding-left: 30px;
+    transition: max-height 0.2s ease-out;
+}
+
+.code_popup .code_wrap .panel p {
     padding: 5px 0;
     line-height: 30px;
 }
 
-.code_popup .code_wrap .code_text span {
+.code_popup .code_wrap .panel span {
     display: inline-block;
     font-size: 14px;
     margin-left: 50px;
     line-height: 25px;
+    padding-bottom: 5px;
 }
 
 .code_popup .code_wrap .code_img {
@@ -944,13 +965,12 @@ section {
 
 .code_img .detail_code_tab img {
     width: 650px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .code_popup .code_wrap .tab_box h2 {
     font-size: 20px;
     font-weight: 300;
-    padding: 30px 0 15px;
 }
 
 .code_popup .code_wrap .tab_box p {
